@@ -35,6 +35,11 @@ MODEL_SELECT() {
             MODEL_TEMPLATE_TYPE="meta-chat"
             MODEL_FRAMEWORK="vllm"
             ;;
+        llama-3-262k)
+            MODEL_PATH="gradientai/Llama-3-8B-Instruct-262k"
+            MODEL_TEMPLATE_TYPE="llama-3"
+            MODEL_FRAMEWORK="vllm"
+            ;;
         gpt-3.5-turbo)
             MODEL_PATH="gpt-3.5-turbo-0125"
             MODEL_TEMPLATE_TYPE="base"
