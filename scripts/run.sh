@@ -65,6 +65,7 @@ if [ "$MODEL_FRAMEWORK" == "vllm" ]; then
         --dtype bfloat16 \
         --disable-custom-all-reduce \
         --max-model-len 140000 \
+        --max-num-seqs 1 \
         &
 
 elif [ "$MODEL_FRAMEWORK" == "trtllm" ]; then
