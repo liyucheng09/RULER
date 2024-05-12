@@ -64,6 +64,7 @@ if [ "$MODEL_FRAMEWORK" == "vllm" ]; then
         --tensor-parallel-size=${GPUS} \
         --dtype bfloat16 \
         --disable-custom-all-reduce \
+        --max-model-len 140000 \
         &
 
 elif [ "$MODEL_FRAMEWORK" == "trtllm" ]; then

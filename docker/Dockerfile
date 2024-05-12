@@ -24,4 +24,5 @@ RUN pip install --upgrade pip \
     
 RUN [ "python3", "-c", "import nltk; nltk.download('punkt')"]
 
-    
+RUN git clone https://github.com/liyucheng09/RULER.git
+RUN cd RULER/scripts/data/synthetic/json && python download_paulgraham_essay.py && bash download_qa_dataset.sh
